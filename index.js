@@ -12,7 +12,7 @@ app.use(require("morgan")("dev"));
 app.get("/api/employees", async (req, res, next) => {
   try {
     const SQL = `
-      SELECT * FROM employees ORDER BY created_at DESC;
+      SELECT * FROM employees ORDER BY created_at DESC
     `;
     const response = await client.query(SQL);
     res.send(response.rows);
@@ -25,8 +25,7 @@ app.get("/api/employees", async (req, res, next) => {
 app.get("/api/departments", async (req, res, next) => {
   try {
     const SQL = `
-      SELECT employees.id, employees.departments_id, departments.name, employees.name from employees
-      INNER JOIN departments on employees.departments_id  = departments.id
+      SELECT * FROM departments 
     `;
     const response = await client.query(SQL);
     res.send(response.rows);
