@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "pg": "^8.13.1"
+  },
+  "name": "acme_hr_directory",
+  "version": "1.0.0",
+  "description": "CLSnapp's Block 33 Workshop: The Acme HR Directory",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLSnapp/Acme_HR_Directory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CLSnapp/Acme_HR_Directory/issues"
+  },
+  "homepage": "https://github.com/CLSnapp/Acme_HR_Directory#readme"
+}
